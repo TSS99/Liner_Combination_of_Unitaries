@@ -20,7 +20,7 @@ The Linear Combination of Unitaries (LCU) is a powerful quantum algorithmic tech
 - Complete LCU circuit implementation with ancilla-based control
 - Two state preparation methods: abstract and RY/CX decomposed
 - Postselection-based measurement protocol
-- Empirical validation matching theoretical predictions (~22% success probability)
+- Empirical validation matching theoretical predictions
 
 ## Theory
 
@@ -50,9 +50,9 @@ $$
 
 such that $\sum_{j=0}^{L-1} p_j = 1$.
 
-### LCU Protocol
+### LCU 
 
-The LCU protocol consists of three main steps:
+The LCU consists of three main steps:
 
 1. **State Preparation**: Prepare an ancilla register in the state
    $$
@@ -127,6 +127,24 @@ The repository includes two circuit visualizations:
    - Demonstrates the full gate-level implementation
 
 ## Results
+
+### Experimental Configuration
+
+I tested the LCU implementation with the following configuration:
+
+**Operator Decomposition:**
+$$
+A = 0.3 \cdot X \otimes X \otimes X \otimes X \otimes Y + 0.89 \cdot X \otimes Y \otimes Z \otimes Z \otimes Y + 0.99 \cdot Y \otimes Y \otimes X \otimes X \otimes I + 0.88 \cdot Y \otimes X \otimes Y \otimes X \otimes Z + 0.98 \cdot X \otimes Y \otimes Y \otimes Z \otimes I
+$$
+
+**Implementation Parameters:**
+```python
+coefficients = [0.3, 0.89, 0.99, 0.88, 0.98]
+unitaries    = ["XXXXY", "XYZZY", "YYXXI", "YXYXZ", "XYYZI"]
+initial_state = "00000+10101+00100+11111"
+shots = 20000
+normalize_coeffs_l2 = True
+```
 
 ### Success Probability Validation
 
@@ -232,13 +250,6 @@ $$
 
 where the normalization factor $1/\alpha$ appears due to the postselection on $|0\rangle_{\text{anc}}$.
 
-## Future Enhancements
-
-- [ ] Implement amplitude amplification to boost success probability
-- [ ] Add support for variable-sized unitary decompositions
-- [ ] Optimize for specific quantum hardware backends
-- [ ] Include error mitigation strategies
-- [ ] Extend to complex coefficients using phase estimation
 
 ## References
 
@@ -260,5 +271,5 @@ This implementation was developed as part of my exploration into quantum algorit
 
 ---
 
-**Author**: [Tilock Sadhukhan]  
+**Author**: **Tilock Sadhukhan** [LinkdIn](https://www.linkedin.com/in/tilock-sadhukhan/)
 **Last Updated**: February 2026
