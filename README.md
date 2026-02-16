@@ -12,9 +12,9 @@ You start with an operator written as a linear combination of unitaries:
 $$
 A = \sum_{j=0}^{L-1} \alpha_j U_j
 $$
-where $\alpha_j \in \mathbb{C}$ and each $U_j$ is unitary.
+where $ \alpha_j \in \mathbb{C} $ and each $ U_j $ is unitary.
 
-Since a quantum circuit must be unitary, you do not implement $A$ directly. Instead, you build a larger unitary $W$ such that when you apply it to $|0\rangle_{\text{anc}}|\psi\rangle_{\text{tgt}}$ and postselect the ancilla on $|0\cdots 0\rangle$, the target register behaves like $A|\psi\rangle$ up to a known scaling:
+Since a quantum circuit must be unitary, you do not implement $ A $ directly. Instead, you build a larger unitary $W$ such that when you apply it to $|0\rangle_{\text{anc}}|\psi\rangle_{\text{tgt}}$ and postselect the ancilla on $ |0\cdots 0\rangle $, the target register behaves like $A|\psi\rangle$ up to a known scaling:
 $$
 \left(\langle 0\cdots 0|_{\text{anc}} \otimes I\right)\, W \, \left(|0\cdots 0\rangle_{\text{anc}} \otimes |\psi\rangle_{\text{tgt}}\right) \propto A|\psi\rangle
 $$
