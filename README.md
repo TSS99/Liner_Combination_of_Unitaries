@@ -1,4 +1,4 @@
-# Linear Combination of Unitaries (LCU). Postselected implementation in Qiskit
+# Linear Combination of Unitaries (LCU)
 
 This repo is a working, readable implementation of the **Linear Combination of Unitaries (LCU)** construction in Qiskit using the standard **PREPARE → SELECT → UNPREPARE** pattern, with **postselection** on the ancilla register.
 
