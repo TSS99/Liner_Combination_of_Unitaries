@@ -55,9 +55,7 @@ such that $\sum_{j=0}^{L-1} p_j = 1$.
 The LCU consists of three main steps:
 
 1. **State Preparation**: Prepare an ancilla register in the state
-   $$
-   |0\rangle \rightarrow \sum_{j=0}^{L-1} \sqrt{p_j} |j\rangle
-   $$
+   $ |0\rangle \rightarrow \sum_{j=0}^{L-1} \sqrt{p_j} |j\rangle $
 
 2. **Controlled Unitaries**: Apply controlled-$U_j$ operations conditioned on the ancilla state $|j\rangle$
 
