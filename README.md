@@ -134,8 +134,14 @@ I tested the LCU implementation with the following configuration:
 
 **Operator Decomposition:**
 $$
-A = 0.3 \cdot X \otimes X \otimes X \otimes X \otimes Y + 0.89 \cdot X \otimes Y \otimes Z \otimes Z \otimes Y + 0.99 \cdot Y \otimes Y \otimes X \otimes X \otimes I + 0.88 \cdot Y \otimes X \otimes Y \otimes X \otimes Z + 0.98 \cdot X \otimes Y \otimes Y \otimes Z \otimes I
+A =
+0.3\,(X \otimes X \otimes X \otimes X \otimes Y)
++ 0.89\,(X \otimes Y \otimes Z \otimes Z \otimes Y)
++ 0.99\,(Y \otimes Y \otimes X \otimes X \otimes I)
++ 0.88\,(Y \otimes X \otimes Y \otimes X \otimes Z)
++ 0.98\,(X \otimes Y \otimes Y \otimes Z \otimes I)
 $$
+
 
 **Implementation Parameters:**
 ```python
