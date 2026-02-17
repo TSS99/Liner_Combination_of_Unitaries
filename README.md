@@ -133,11 +133,7 @@ I tested the LCU implementation with the following configuration:
 **Operator Decomposition**
 
 A =
-0.3 (X ⊗ X ⊗ X ⊗ X ⊗ Y)
-+ 0.89 (X ⊗ Y ⊗ Z ⊗ Z ⊗ Y)
-+ 0.99 (Y ⊗ Y ⊗ X ⊗ X ⊗ I)
-+ 0.88 (Y ⊗ X ⊗ Y ⊗ X ⊗ Z)
-+ 0.98 (X ⊗ Y ⊗ Y ⊗ Z ⊗ I)
+0.3 (X ⊗ X ⊗ X ⊗ X ⊗ Y) + 0.89 (X ⊗ Y ⊗ Z ⊗ Z ⊗ Y) + 0.99 (Y ⊗ Y ⊗ X ⊗ X ⊗ I) + 0.88 (Y ⊗ X ⊗ Y ⊗ X ⊗ Z) + 0.98 (X ⊗ Y ⊗ Y ⊗ Z ⊗ I)
 
 
 **Implementation Parameters:**
